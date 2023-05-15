@@ -28,6 +28,14 @@
 		let currentIndex = 0;
 		let maxIndex = myArray.length - 1;
 
+		// Функция обновления информации на странице и в окне сообщения
+		function updateInfo() {
+			document.getElementById("current-index").textContent = currentIndex;
+			document.getElementById("max-index").textContent = maxIndex;
+			console.log(`Current index: ${currentIndex}, Max index: ${maxIndex}`);
+		}
+
+		
 </script>
 </body>
 </html>
