@@ -47,7 +47,15 @@
 		}
 
 		// Функция перехода к предыдущему элементу массива
-		
+		function previousItem() {
+			if (currentIndex > 0) {
+				currentIndex--;
+				updateInfo();
+				alert(`Previous item: ${myArray[currentIndex]}`);
+			} else {
+				alert("Already at first item");
+			}
+		}
 </script>
 </body>
 </html>
