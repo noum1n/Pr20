@@ -77,7 +77,25 @@
 					maxIndex = newMaxIndex;
 					if (currentIndex > maxIndex) {
 						currentIndex = maxIndex
-
+// Функция задания максимального индекса
+function setMaxIndex() {
+  let newMaxIndex = prompt("Enter new max index");
+  if (newMaxIndex !== null && newMaxIndex !== "") {
+    newMaxIndex = parseInt(newMaxIndex);
+    if (isNaN(newMaxIndex)) {
+      alert("Invalid input");
+    } else if (newMaxIndex < 0 || newMaxIndex > myArray.length - 1) {
+      alert(`Invalid index (should be between 0 and ${myArray.length - 1})`);
+    } else {
+      maxIndex = newMaxIndex;
+      if (currentIndex > maxIndex) {
+        currentIndex = maxIndex;
+      }
+      updateInfo();
+      alert(`Max index set to ${maxIndex}`);
+    }
+  }
+}
 </script>
 </body>
 </html>
