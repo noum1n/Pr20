@@ -35,6 +35,19 @@
 			console.log(`Current index: ${currentIndex}, Max index: ${maxIndex}`);
 		}
 
+		// Функция перехода к следующему элементу массива
+		function nextItem() {
+			if (currentIndex < maxIndex) {
+				currentIndex++;
+				updateInfo();
+				alert(`Next item: ${myArray[currentIndex]}`);
+			} else {
+				alert("Already at last item");
+			}
+		}
+
+		// Функция перехода к предыдущему элементу массива
+		
 </script>
 </body>
 </html>
